@@ -1,0 +1,26 @@
+﻿@using L3.Models;
+@model PeopleIndexVM[]
+@addTagHelper*, Microsoft.AspNetCore.Mvc.Taghelpers
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Home </title>
+</head>
+<body>
+    <h1> Home </h1>
+    <ul>
+        @foreach (var person in Model)
+        {
+            if (person.ShowAsHighLighted)
+            {
+                <li style="color:green"> First name: @person.Name <br>E-mail: @person.Email <hr></li>
+            }
+            else
+            {
+                <li> First name: @person.Name <br>E-mail: @person.Email <hr></li>
+            }
+        }
+    </ul>
+    <a asp-controller="people" asp-action="create"> Add subscriber </a>
+</body>
+</html>

@@ -1,0 +1,11 @@
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\L3.deps.json
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\L3.runtimeconfig.json
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\L3.runtimeconfig.dev.json
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\L3.dll
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\obj\Debug\netcoreapp1.1\L3.csprojResolveAssemblyReference.cache
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\obj\Debug\netcoreapp1.1\L3.AssemblyInfo.cs
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\bin\Debug\netcoreapp1.1\L3.pdb
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\obj\Debug\netcoreapp1.1\L3.dll
+C:\Users\ander\Documents\Visual Studio 2017\Projects\Webbutveckling\Labbar\Labb3\L3\L3\obj\Debug\netcoreapp1.1\L3.pdb
