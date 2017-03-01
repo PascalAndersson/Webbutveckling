@@ -1,12 +1,8 @@
 ﻿@using L3.Models;
 @model L3.Models.PeopleCreateVM
 @addTagHelper*, Microsoft.AspNetCore.Mvc.Taghelpers
-<!DOCTYPE html>
-<html>
-<head>
-    <title> Create </title>
-</head>
-<body>
+
+
     <h1> Create </h1>
     <form asp-action="create" asp-controller="people">
         <label asp-for="Name"></label>
@@ -24,5 +20,3 @@
         <br>
         <input type="submit" value="Submit">
     </form>
-</body>
-</html>

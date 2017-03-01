@@ -21067,15 +21067,15 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ander\\.nuget\\packages\\": {}
+    "C:\\Users\\Anders\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\Labb3\\L3\\L3\\L3.csproj",
+      "projectUniqueName": "C:\\Users\\Anders\\Documents\\Visual Studio 2017\\Projects\\ASP.Net\\GruppLabb\\Webbutveckling\\L3\\L3\\L3.csproj",
       "projectName": "L3",
-      "projectPath": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\Labb3\\L3\\L3\\L3.csproj",
-      "outputPath": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\Labb3\\L3\\L3\\obj\\",
+      "projectPath": "C:\\Users\\Anders\\Documents\\Visual Studio 2017\\Projects\\ASP.Net\\GruppLabb\\Webbutveckling\\L3\\L3\\L3.csproj",
+      "outputPath": "C:\\Users\\Anders\\Documents\\Visual Studio 2017\\Projects\\ASP.Net\\GruppLabb\\Webbutveckling\\L3\\L3\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

@@ -1,0 +1,10 @@
+﻿@using L3.Models
+@model PeopleIndexVM
+
+<div style="background-color:gold">
+    <h5>@Model.Name</h5>
+    @if(Model.ShowAsHighLighted)
+    { 
+        <p style="color:mintcream">@Model.Email</p>
+    }
+</div>

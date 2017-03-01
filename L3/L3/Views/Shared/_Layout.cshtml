@@ -1,0 +1,19 @@
+﻿@addTagHelper*, Microsoft.AspNetCore.Mvc.Taghelpers
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        @RenderBody()
+    </div>
+    <a asp-controller="people" asp-action="create">Add person</a>
+    <a asp-controller="people" asp-action="index">Show all people</a>
+    <footer>
+        &copy; WRP 2017
+    </footer>
+</body>
+</html>
