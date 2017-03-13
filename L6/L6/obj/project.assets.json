@@ -21154,10 +21154,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\L6\\L6\\L6\\L6.csproj",
+      "projectUniqueName": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\L6\\Webbutveckling\\L6\\L6\\L6.csproj",
       "projectName": "L6",
-      "projectPath": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\L6\\L6\\L6\\L6.csproj",
-      "outputPath": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\L6\\L6\\L6\\obj\\",
+      "projectPath": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\L6\\Webbutveckling\\L6\\L6\\L6.csproj",
+      "outputPath": "C:\\Users\\ander\\Documents\\Visual Studio 2017\\Projects\\Webbutveckling\\Labbar\\L6\\Webbutveckling\\L6\\L6\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"

@@ -8,6 +8,7 @@ namespace L6.Models
     public class CustomersIndexVM
     {
         public int Id { get; set; }
+
         public string CompanyName { get; set; }
     }
 }
