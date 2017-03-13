@@ -1,0 +1,25 @@
+﻿@model CustomersIndexVM[]
+@{ 
+    ViewBag.Title = "Index";
+}
+
+    @foreach (var cust in Model)
+    {
+        <script>
+            var firstName = @cust.FirstName;
+        </script>
+
+<p> First name: @cust.FirstName <br> Last name: @cust.LastName</p>
+        <input id="btn" type="button" value="Info" onclick="doStuff(firstName)"/>
+    }
+        <div id="divResult"></div>
+
+
+<script>
+    function doStuff(firstName)
+    {
+        var divResult = document.getElementById("divResult");
+        var html = "<b>Name: </b>" + firstName;
+        divResult.innerHTML = html;
+    }
+</script>
