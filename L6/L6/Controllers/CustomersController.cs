@@ -12,11 +12,16 @@ namespace L6.Controllers
     public class CustomersController : Controller
     {
         // GET: /<controller>/
-        public IActionResult Index(int id)
+        public IActionResult Index()
         {
-
             var model = DataManager.ListCustomers();
             return View(model);
+        }
+
+        public IActionResult GetCustomerHtml(int id)
+        {
+            var viewModel = DataManager.GetCustomerById(id);
+            return PartialView("CustomerBox", viewModel);
         }
     }
 }

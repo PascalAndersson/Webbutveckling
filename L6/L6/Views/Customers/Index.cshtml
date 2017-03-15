@@ -2,18 +2,32 @@
 @{
     ViewBag.Title = "Index";
 }
-
-@foreach (var cust in Model)
-{
-    <p id="info" onmouseover="doStuff(@cust.Id)"> Company name: @cust.CompanyName </p>
-    <div id="divResult"></div>
-}
-
-
-<script>
-    function doStuff(id) {
-        var divResult = document.getElementById("divResult");
-        var html = "<b>Company ID: </b>";
-        divResult.innerHTML = html;
+<table>
+    @foreach (var cust in Model)
+    {
+        <tr>
+            <td onmouseover="showInfo(@cust.Id,'@cust.CompanyName', '@cust.City')" onmouseout="hideInfo()"> Company name: @cust.CompanyName </td>
+        </tr>
     }
-</script>
+</table>
+<br>
+@*<div id="divResult"></div>*@
+
+
+@section scripts
+{
+    <script src="~/Scripts/jquery-3.1.0.min.js"></script>
+    <script>
+        function showInfo(id, companyName, city) {
+            var divResult = document.getElementById("divResult");
+            var html = id + ". " + companyName + " in " + city;
+            divResult.innerHTML = html;
+        }
+
+        function hideInfo() {
+            var divResult = document.getElementById("divResult");
+            var html = "";
+            divResult.innerHTML = html;
+        }
+    </script>
+}
