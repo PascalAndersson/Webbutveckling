@@ -1,0 +1,59 @@
+﻿@model MovieDisplayAdvancedVM
+
+@{
+    ViewBag.Title = "Home";
+}
+<img src="~/img/Logomakr_7qm02q.png" width="1000" height="300" />
+<div class="container">
+
+    <form asp-controller="Movies" asp-action="Index">
+        <label asp-for="DisplayActionBool"></label>
+        <input asp-for="DisplayActionBool" />
+        
+        <label asp-for="DisplayComedyBool"></label>
+        <input asp-for="DisplayComedyBool" />
+
+        <label asp-for="DisplayRomanceBool"></label>
+        <input asp-for="DisplayRomanceBool" />
+        <br />
+        <input asp-for="SearchBox" />
+        <input type="submit" value="search" />
+    </form>
+</div>
+
+<div class="container">
+    <h2>Our Movies</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Movie</th>
+                <th>Length</th>
+                <th>Score</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (Model.SearchBox == null)
+            {
+                foreach (var movie in Model.ListViewModels)
+                {
+                    @Html.Partial("DisplayMovie", movie);
+                }
+            }
+            else if (Model.ListViewModels.Length > 0)
+            {
+                foreach (var movie in Model.ListViewModels)
+                {
+                    @Html.Partial("DisplayMovie", movie);
+                }
+            }
+            else
+            {
+                <p>No search result</p>
+            }
+
+        </tbody>
+    </table>
+</div>
+
+
+
