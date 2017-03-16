@@ -1,0 +1,24 @@
+﻿@model MovieReviewAdvancedVM
+@{
+    ViewBag.Title = "Reviews";
+}
+
+<div class="container-fluid">
+    <h1>Reviews</h1>
+    <div class="row content">
+        <div class="col-sm-3 sidenav">           
+            <h3>@Model.FormViewModel.Title</h3>
+            <img src="~/img/@(Model.FormViewModel.Id).jpg" width="120" height="150" alt="Image error" />
+            <br />
+        </div>
+
+        <div class="col-sm-9">
+            <hr>
+            @foreach (var review in Model.ListViewModels)
+            {
+                @Html.Partial("DisplayReview", review)
+            }
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+﻿@model MovieDisplayAdvancedVM
+
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <img src="~/css/guld.jpg" style="width:50px;height:50px" />
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a asp-controller="Movies" asp-action="Index">Home</a></li>
+            <li><a asp-controller="Movies" asp-action="Create">Create</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="modal" data-target="#signUp"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#logIn"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+        <div class="modal fade" id="logIn" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Log in</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form asp-controller="Movies" asp-action="Index">
+                            <label> Username: </label>
+                            <input placeholder="Username" />
+                            <br>
+                            <label> Password: </label>
+                            <input placeholder="Password" />
+                            <br>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Log in</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="signUp" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Sign up</h4>
+                    </div>
+                    <div class="modal-body">
+                        <form asp-controller="Movies" asp-action="Index">
+                            <label> Username: </label>
+                            <input placeholder="Username" />
+                            <br>
+                            <label> Password: </label>
+                            <input placeholder="Password" />
+                            <br>
+                            <label> Phone: </label>
+                            <input placeholder="Phone" />
+                            <br>
+                            <label> E-mail: </label>
+                            <input placeholder="Email" />
+                            <br>
+
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="submit" class="btn btn-success">Register</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</nav>

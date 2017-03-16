@@ -1,0 +1,62 @@
+﻿@model MovieDisplayVM
+
+<tr>
+    <td>@Model.Title</td>
+    <td>@Model.Length min</td>
+    @if (Model.Rate == null)
+    {
+        <td>N/A</td>
+    }
+    else
+    {
+        <td>@Model.Rate</td>
+    }
+    <td>
+        <div class="dropdown">
+            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                More
+                <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">About </a></li>
+                <li><a href="/Movies/Reviews/@Model.Id">See reviews</a></li>
+                <li><a href="#@Model.Id" data-toggle="modal">Review this movie</a></li>
+            </ul>
+        </div>
+    </td>
+
+    <!--<td><button type="button" class="btn btn-primary btn-xs" onclick='location.href="/Movies/Reviews/@Model.Id"'>Reviews</button></td>
+        -->
+</tr>
+
+<div id="@Model.Id" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Review <i>@Model.Title</i></h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <img src="~/img/scale.jpg" width="200" />
+                    <input type="range" min="0" max="10" style="width:200px;" />
+                    <label>Title</label><span class="glyphicon glyphicon-question-sign"></span> 
+                    <br />
+                    <input type="text" />
+                    <br />
+                    <label>Text</label>
+                    <br />
+                    <textarea name="message" rows="10" cols="50"></textarea>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
