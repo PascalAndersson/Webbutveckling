@@ -1,0 +1,15 @@
+﻿@model MovieInfoVM
+
+
+@if (Model.ReviewTitle != null)
+{
+    <h3>@Model.ReviewTitle</h3>
+    <button data-toggle="collapse" align="center" class="btn btn-warning btn-sm" data-target="#@Model.Id">See more</button>
+    <div id="@Model.Id" class="collapse">
+        <div class="container">
+            <br />
+            <h8>@Model.Text</h8>
+        </div>
+    </div>
+}
+

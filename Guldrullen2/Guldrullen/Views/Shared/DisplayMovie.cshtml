@@ -1,0 +1,24 @@
+﻿@model MovieDisplayVM
+
+<tr>
+    <td>@Model.Title</td>
+    <td>@Model.Length min</td>
+    @if (Model.Rate == 0)
+    {
+        <td>N/A</td>
+    }
+    else
+    {
+        <td>@Model.Rate</td>
+    }
+    <td>
+        <div class="btn-group">
+            <button type="button" class="btn btn-primary btn-xs" onclick='location.href="/Movies/Info/@Model.Id"'>About/Reviews</button>
+            <button type="button" class="btn btn-primary btn-xs" onclick='location.href="/Movies/Edit/@Model.Id"'>Edit</button>
+        </div>
+    </td>
+</tr>
+
+
+
+
